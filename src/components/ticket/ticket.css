@@ -1,0 +1,64 @@
+.ticket {
+  position: relative;
+
+  border: 1px solid #000;
+  padding: 20px 150px 20px 65px;
+  background-color: #fff;
+}
+
+.ticket:not(:last-child) {
+  border-bottom: none;
+}
+
+.ticket__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.ticket__btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer;
+}
+
+.ticket__btn_status {
+  position: absolute;
+  left: 15px;
+}
+
+.done {
+  background-image: url('../../svg/done.svg');
+}
+
+.ticket__date {
+  flex-shrink: 0;
+}
+
+.ticket__btn_update {
+  position: absolute;
+  right: 80px;
+
+  background-image: url('../../svg/pencil.svg');
+}
+
+.ticket__btn_delete {
+  position: absolute;
+  right: 30px;
+
+  background-image: url('../../svg/delete.svg');
+}
+
+.ticket__full-description {
+  padding-top: 30px;
+}
+
